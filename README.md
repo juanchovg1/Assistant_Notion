@@ -1,23 +1,33 @@
-#Proyecto de Asistente de Notion
-Este es un proyecto que utiliza reconocimiento de voz para interactuar con bases de datos en Notion. El usuario puede dar comandos de voz para realizar acciones como agregar elementos a bases de datos de películas, libros y lugares en Notion.
+Proyecto de Asistente de Voz para Notion
+Este proyecto es un asistente de voz que interactúa con bases de datos de Notion para realizar operaciones como agregar, actualizar o eliminar registros. Utiliza reconocimiento de voz para interpretar los comandos del usuario y actuar en consecuencia en las bases de datos de Notion.
 
-Instalación
-Clona este repositorio en tu máquina local.
-
-Instala las dependencias utilizando pip:
-
+Requisitos
+Python 3.x
+Instala las dependencias necesarias utilizando el siguiente comando:
 bash
 Copy code
 pip install -r requirements.txt
-Asegúrate de tener configurado tu entorno de Notion y que tengas un token de integración válido.
-Uso
-Ejecuta el script main.py para iniciar el asistente de Notion.
+Configuración de Tokens de Notion
+Antes de ejecutar el programa, asegúrate de configurar los tokens de integración para autenticarte con la API de Notion. Necesitarás obtener tu token de integración desde la configuración de Notion y reemplazar los placeholders YOUR_SECRET_TOKEN, YOUR_MOVIES_DATABASE_ID, YOUR_BOOK_DATABASE_ID y YOUR_PLACES_DATABASE_ID en el código con tus propios tokens y IDs de base de datos respectivamente.
 
-Cuando se solicite, di tu comando de voz. El asistente intentará reconocer el comando y llevar a cabo la acción correspondiente en Notion.
+Estructura de las Bases de Datos
+Base de Datos de Películas (Movies): Ejemplo duplicable -> https://juanvillota.notion.site/e87c69a9049e428db9aad127166e24c3?v=bdc7985fba114c4481def8d6812ebbfd&pvs=4 
+Título: Texto (Title)
+Director: Texto (Director)
+Año de Estreno: Texto (Release Year)
+Género: Selección Múltiple (Genre)
+Notas Adicionales: Texto (Additional Notes)
+Base de Datos de Libros (Books): Ejemplo duplicable -> https://juanvillota.notion.site/f80d212e99184deaa3329c2d3bbf52f9?v=18cbdb91c2f349cfa1b93f32b1184883&pvs=4
+Título: Texto (Title)
+Autor: Texto (Author)
+Fecha de Publicación: Texto (Publication Date)
+Género: Selección Múltiple (Genre)
+Notas Adicionales: Texto (Additional Notes)
+Base de Datos de Lugares (Places): Ejemplo duplicable -> https://juanvillota.notion.site/56281989a2cc45fab6dc6b6bbf119a8a?v=b41ecff8f3f841729eb48f4ce72c7cb7&pvs=4
+Nombre del Lugar: Texto (Place Name)
+Tipo de Lugar: Selección Múltiple (Place Type)
+Ejecución del Programa
+Una vez que hayas configurado tus tokens de Notion y asegurado la estructura de las bases de datos, puedes ejecutar el programa assistant.py. El asistente capturará tu comando de voz, procesará la acción y la categoría correspondientes, y realizará la operación en la base de datos correspondiente de Notion.
 
-Se pueden realizar acciones como agregar elementos a las bases de datos de películas, libros y lugares, así como actualizar y eliminar elementos.
+¡Disfruta interactuando con tu asistente de voz para Notion!
 
-Ejemplos de comandos
-"Agrega la película Titanic a películas."
-"Añade el libro Cien años de soledad a libros."
-"Crea el lugar Parque Nacional Yellowstone en lugares."
