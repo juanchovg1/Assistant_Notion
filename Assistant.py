@@ -108,10 +108,10 @@ def determine_database(category):
 
 def create_record_in_notion_movies(entity_name):
     # Autenticación con el token de integración
-    notion = Client(auth="secret_JDEWk68oFM34pBIWch6dKwoqE3x3XEmHFesQByd3hv8")
+    notion = Client(auth="YOUR_SECRET_TOKEN")
 
     # ID de la base de datos
-    database_id = "e87c69a9049e428db9aad127166e24c3"
+    database_id = "YOUR_MOVIES_DATABASE_ID"
 
     # Crear una nueva entrada en la base de datos
     new_page = notion.pages.create(
@@ -145,10 +145,10 @@ def create_record_in_notion_movies(entity_name):
 
 def create_record_in_notion_books(entity_name):
     # Autenticación con el token de integración
-    notion = Client(auth="secret_JDEWk68oFM34pBIWch6dKwoqE3x3XEmHFesQByd3hv8")
+    notion = Client(auth="YOUR_SECRET_TOKEN")
 
     # ID de la base de datos
-    database_id = "f80d212e99184deaa3329c2d3bbf52f9"
+    database_id = "YOUR_BOOK_DATABASE_ID"
 
     # Crear una nueva entrada en la base de datos
     new_page = notion.pages.create(
@@ -182,10 +182,10 @@ def create_record_in_notion_books(entity_name):
 
 def create_record_in_notion_places(entity_name):
     # Autenticación con el token de integración
-    notion = Client(auth="secret_JDEWk68oFM34pBIWch6dKwoqE3x3XEmHFesQByd3hv8")
+    notion = Client(auth="YOUR_SECRET_TOKEN")
 
     # ID de la base de datos
-    database_id = "56281989a2cc45fab6dc6b6bbf119a8a"
+    database_id = "YOUR_PLACES_DATABASE_ID"
 
     # Crear una nueva entrada en la base de datos
     new_page = notion.pages.create(
