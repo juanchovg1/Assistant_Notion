@@ -29,5 +29,3 @@ Tipo de Lugar: Selección Múltiple (Place Type)
 Ejecución del Programa
 Una vez que hayas configurado tus tokens de Notion y asegurado la estructura de las bases de datos, puedes ejecutar el programa assistant.py. El asistente capturará tu comando de voz, procesará la acción y la categoría correspondientes, y realizará la operación en la base de datos correspondiente de Notion.
 
-¡Disfruta interactuando con tu asistente de voz para Notion!
-
